@@ -24,7 +24,7 @@ class StoryView(generic.DetailView):
 
 class AddStoryView(generic.CreateView):
     form_class = StoryForm
-    context_objext_name = 'storyForm"
+    context_objext_name = 'storyForm'
     template_name = 'news/createStory.html'
     success_url = reverse_lazy('news:index')
 
