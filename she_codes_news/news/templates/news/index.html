@@ -2,10 +2,12 @@
 {% load static %}
 
 {% block stylesheets %}
-<link rel="stylesheet" type="text/css" href="{% static 'news/styless.css' %}"
+<link rel="stylesheet" type="text/css" href="{% static 'news/styless.css' %}">
 {% endblock %}
 
 {% block content %}
+
+<a href="{% url 'news:newStory' %}">Write New Story</a>
 
    <h2>Latest News</h2>
 

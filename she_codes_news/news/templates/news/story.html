@@ -2,8 +2,10 @@
 {% load static %}
 
 {% block stylesheets %}
-<link rel="stylesheet" type="text/css" href="{% static 'news%"
-{%end block%}
+<link rel="stylesheet" type="text/css" href="{% static 'new/styles.css' %">
+{% endblock %}
+
+{% block content %}
 
 <div id="story-wrapper">
     <h2>{{ story.title }}</h2>
@@ -13,3 +15,5 @@
         {{ story.content|linebreaks }}
     </div>
 </div>
+
+{% endblock %}
